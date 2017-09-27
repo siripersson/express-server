@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/siripersson/express-server/issues"
   },
-  "homepage": "https://github.com/siripersson/express-server#readme"
+  "homepage": "https://github.com/siripersson/express-server#readme",
+  "dependencies": {
+    "express": "^4.15.5"
+  }
 }
