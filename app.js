@@ -1,14 +1,17 @@
 const express= require('express') // importera express och spara i en variabel
+const path=require('path')
+
 
 const app =express() // Skapa en express app
 
-app.set('views', path.join(_dirname,'views'));
+app.set('views', path.join(__dirname,'views'));
 app.set('view engine', 'ejs');
 
 //app.get('/', function(req,res){ // 
 app.get('/', (req,res) => {
 	console.log("Nu är vi på startsidan")
-	res.send("Hello World!")
+	//res.send("Hello World!")
+	res.render('fruit')
 })
 
 app.get('/om', (req,res) => {
